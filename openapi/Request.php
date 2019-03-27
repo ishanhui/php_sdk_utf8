@@ -106,6 +106,21 @@ class Openapi_Request
         return $this->formPost('/pay/quickpay.action', $this->addSign($data));
     }
 
+    public function treatyQuickPayApply($data){
+        $data['merchantId'] = $this->merchantId;
+        return $this->request('/pay/treatyQuickPayApply.do', $this->addSign($data));
+    }
+
+    public function treatyQuickPayConfirm($data){
+        $data['merchantId'] = $this->merchantId;
+        return $this->request('/pay/treatyQuickPayConfirm.do', $this->addSign($data));
+    }
+
+    public function treatyQuickPaySubmit($data){
+        $data['merchantId'] = $this->merchantId;
+        return $this->request('/pay/treatyQuickPaySubmit.do', $this->addSign($data));
+    }
+
     public function customReport($data)
     {
         $data['merchantId'] = $this->merchantId;
