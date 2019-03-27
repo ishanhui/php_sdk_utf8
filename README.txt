@@ -29,6 +29,10 @@ php_sdk_utf8
   ├customQuery.php ┈┈┈┈┈┈┈报关结果查询
   ├customReport.php┈┈┈┈┈┈┈报关推送
   │
+  ├treatyQuickPayApply.php┈┈┈ 协议快捷-协议申请接口
+  ├treatyQuickPayConfirm.php┈┈ 协议快捷-协议确认接口
+  ├treatyQuickPaySubmit.php┈┈┈协议快捷-扣款提交接口
+  │
   └README.txt ┈┈┈┈┈┈┈┈┈ 使用说明文本
 ※注意※
 需要修改配置的文件是：
